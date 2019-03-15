@@ -1,0 +1,20 @@
+.box {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+body {
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin:  50 auto;
+    background: repeating-linear-gradient(
+      90deg,
+      yellow 0px,
+      blue 40px,
+      green 40px,
+      red 80px
+    );
+}
