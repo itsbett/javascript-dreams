@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<style>
+	body {
+		background-color: #292421;
+	}
+	#container {
+		border-style: solid;
+		border-color: #75675E;
+		border-width: 2px;
+		width: 340px;
+		height: 100px;
+		background-color: #000;
+	}
+	#tetrisBox {
+		border-style: solid;
+		border-color: #75675E;
+		border-width: 2px;
+		display: inline-block;
+	}
+	#score {
+		position: relative;
+		bottom: 15px;
+		text-align: center;
+		background-color: #000;
+		color: yellow;
+		font-size: 40px;
+		font-family: fantasy;
+	}
+	#nextPiece {
+		background-color: black;
+		float: right;
+		color: white;
+		width: 100px;
+		height: 400px;
+		border-style: solid;
+		border-width: 2px;
+		border-color: #75675E;
+	}
+</style>
+<head>
+	<title>Tetris</title>
+</head>
+<body>
+	<div id="tetrisBox">
+		<canvas id="tetris" width="340" height="400"></canvas>
+		<div id="nextPiece">dis here a test</div>
+	</div>
+	<div id="container">
+		<p id="score">ok</p>
+	</div>
+	<script src="tetrisC.js"></script>	
+</body>
+</html>
