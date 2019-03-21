@@ -109,6 +109,7 @@ function draw () {
     y: 0
   })
   drawMatrix(player.matrix, player.pos)
+  drawBorders()
   drawQueueArea()
 }
 
@@ -251,11 +252,20 @@ function createShapeQueue () {
 
 function drawQueueArea () {
   for (let i = 0; i < 3; i++) {
-    drawMatrix(shapeQueue[i], { x: 13, y: (2 - i) * 5 })
+    drawMatrix(shapeQueue[i], { x: 13, y: 1 + (2 - i) * 5 })
   }
 }
 
+function drawBorders () {
+  context.fillStyle = '#75675E'
+  context.fillRect(12, 0, 1, 16)
+  context.fillRect(12, 15, 5, 1)
+  context.fillRect(12, 15, 5, 5)
+  context.fillRect(16, 0, 1, 16)
+}
+
 createShapeQueue()
+drawBorders()
 playerReset()
 updateScore()
 drawQueueArea()
